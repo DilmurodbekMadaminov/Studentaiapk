@@ -1,0 +1,212 @@
+{
+  "entities": {
+    "SystemData": {
+      "title": "System Data",
+      "description": "Persistent cloud state for application datasets including jobs, locks, and promos",
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "string",
+          "description": "JSON serialized data payload"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp of last update"
+        }
+      }
+    },
+    "FreelanceJob": {
+      "title": "Freelance Job",
+      "description": "Job postings and gigs created by users",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the job"
+        },
+        "title": {
+          "type": "string",
+          "description": "Job title"
+        },
+        "clientEmail": {
+          "type": "string",
+          "format": "email",
+          "description": "Client email"
+        },
+        "budget": {
+          "type": "string",
+          "description": "Budget range"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status: open, in_progress, completed"
+        }
+      }
+    },
+    "SectionLock": {
+      "title": "Section Lock",
+      "description": "Admin configuration for locked platform modules",
+      "type": "object",
+      "properties": {
+        "sectionId": {
+          "type": "string",
+          "description": "Identifier of the locked module"
+        },
+        "isLocked": {
+          "type": "boolean",
+          "description": "Lock status"
+        },
+        "lockReason": {
+          "type": "string",
+          "description": "Notice displayed when users attempt access"
+        },
+        "lockMode": {
+          "type": "string",
+          "enum": ["ALL", "FREE_ONLY"],
+          "description": "Target audience to restrict"
+        }
+      }
+    },
+    "PromoCode": {
+      "title": "Promo Code",
+      "description": "Promotional vouchers and bonus codes",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Promo code record identifier"
+        },
+        "code": {
+          "type": "string",
+          "description": "Case-insensitive promo code string"
+        },
+        "type": {
+          "type": "string",
+          "description": "PRO_MONTHS, WALLET_BONUS, or DISCOUNT_PERCENT"
+        },
+        "value": {
+          "type": "number",
+          "description": "Value amount or duration"
+        },
+        "isActive": {
+          "type": "boolean",
+          "description": "Whether code is currently active"
+        }
+      }
+    },
+    "Subscription": {
+      "title": "Subscription",
+      "description": "User Pro subscription state",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "User email address"
+        },
+        "isPro": {
+          "type": "boolean",
+          "description": "Pro subscription flag"
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Expiration date"
+        }
+      }
+    },
+    "Wallet": {
+      "title": "Wallet",
+      "description": "In-app wallet balance and transactions",
+      "type": "object",
+      "properties": {
+        "balance": {
+          "type": "number",
+          "description": "Wallet balance in UZS"
+        },
+        "transactions": {
+          "type": "array",
+          "description": "List of ledger transactions"
+        }
+      }
+    },
+    "Subject": {
+      "title": "Subject",
+      "description": "Educational test question collections and subject metadata",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Subject identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Subject name"
+        },
+        "creator": {
+          "type": "string",
+          "description": "Author email or system"
+        }
+      }
+    },
+    "User": {
+      "title": "User",
+      "description": "User profile records",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "User unique ID"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "User email"
+        },
+        "name": {
+          "type": "string",
+          "description": "User full name"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "/system_data/{docId}": {
+      "schema": "SystemData",
+      "description": "Primary cloud backup and persistence store for system collections"
+    },
+    "/subjects/{subjectId}": {
+      "schema": "Subject",
+      "description": "Quiz questions and tests"
+    },
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile accounts"
+    },
+    "/section_locks/{lockId}": {
+      "schema": "SectionLock",
+      "description": "Locked sections configuration"
+    },
+    "/freelance_jobs/{jobId}": {
+      "schema": "FreelanceJob",
+      "description": "Freelance job listings"
+    },
+    "/promocodes/{promoId}": {
+      "schema": "PromoCode",
+      "description": "Discount and Pro promo vouchers"
+    },
+    "/subscriptions/{subId}": {
+      "schema": "Subscription",
+      "description": "Pro subscription entries"
+    },
+    "/wallets/{walletId}": {
+      "schema": "Wallet",
+      "description": "Student and Freelancer wallet balances"
+    },
+    "/settings/{settingId}": {
+      "schema": "SystemData",
+      "description": "Global application configuration and channel links"
+    }
+  }
+}

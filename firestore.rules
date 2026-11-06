@@ -1,0 +1,115 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Security Helper Functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        (request.auth.token.email != null && (
+          request.auth.token.email.lower() == 'admin@student.ai' ||
+          request.auth.token.email.lower() == 'dilnuramadaminova06@gmail.com'
+        )) ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    // 0. Primary Application Cloud Storage & State Sync
+    match /system_data/{docId} {
+      allow read, write: if isValidId(docId);
+    }
+
+    // 1. Subjects & Quiz Question Banks
+    match /subjects/{subjectId} {
+      allow read, write: if isValidId(subjectId);
+    }
+
+    // 2. User Personal Data, Chats & Wallets
+    match /user_data/{userId} {
+      allow read, write: if isValidId(userId);
+    }
+
+    // 3. Registered User Accounts
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+
+    // 4. WebAuthn Hardware Biometric Credentials
+    match /webauthn_credentials/{credId} {
+      allow read, write: if isValidId(credId);
+    }
+
+    // 5. System Notifications
+    match /notifications/{notifId} {
+      allow read, write: if isValidId(notifId);
+    }
+
+    // 6. Student Marketplace Orders & Freelance Jobs
+    match /orders/{orderId} {
+      allow read, write: if isValidId(orderId);
+    }
+
+    match /jobs/{jobId} {
+      allow read, write: if isValidId(jobId);
+    }
+
+    match /freelance_jobs/{jobId} {
+      allow read, write: if isValidId(jobId);
+    }
+
+    match /freelance_bids/{bidId} {
+      allow read, write: if isValidId(bidId);
+    }
+
+    match /freelance_messages/{msgId} {
+      allow read, write: if isValidId(msgId);
+    }
+
+    match /freelance_reviews/{reviewId} {
+      allow read, write: if isValidId(reviewId);
+    }
+
+    // 7. Promocodes & System Section Lock Configurations
+    match /promocodes/{promoId} {
+      allow read, write: if isValidId(promoId);
+    }
+
+    match /section_locks/{lockId} {
+      allow read, write: if true;
+    }
+
+    match /subscriptions/{subId} {
+      allow read, write: if isValidId(subId);
+    }
+
+    match /wallets/{walletId} {
+      allow read, write: if isValidId(walletId);
+    }
+
+    // 8. Cybersecurity Threat Logs
+    match /security_logs/{logId} {
+      allow read, write: if isValidId(logId);
+    }
+
+    // 9. System Global Settings & Channels Configuration
+    match /settings/{settingId} {
+      allow read, write: if true;
+    }
+
+    // Catch-all Default-Deny Security Guard
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

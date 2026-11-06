@@ -1,0 +1,45 @@
+[
+  {
+    "createdAt": "2026-09-16T12:15:20.056Z",
+    "jobType": "Masofaviy ish",
+    "budget": "00 - 000",
+    "status": "open",
+    "client": "TalabaAI Test Client",
+    "clientEmail": "testclient@talabaai.uz",
+    "postedAt": "Hozirgina",
+    "category": "Web & IT Dasturlash",
+    "freelancerName": null,
+    "verified": true,
+    "id": "1789560920056",
+    "deadline": "7 kun",
+    "level": "Intermediate",
+    "bidsCount": 0,
+    "title": "Python Django Backend Dasturchi",
+    "description": "",
+    "freelancerEmail": null,
+    "deliverableText": null,
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL"
+    ],
+    "contacts": {
+      "phone": "",
+      "telegram": "",
+      "company": "TalabaAI Test Client",
+      "email": "testclient@talabaai.uz"
+    }
+  },
+  {
+    "title": "Test Job",
+    "id": "job_1",
+    "budget": "00",
+    "contacts": {
+      "phone": ""
+    },
+    "skills": [
+      "React",
+      "Node"
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Student AI</string>
+    <string name="welcome_student">Xush kelibsiz, Talaba</string>
+    <string name="tagline">Akademik mukammallik va daromad uchun gibrid intellekt platformasi</string>
+</resources>

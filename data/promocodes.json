@@ -1,0 +1,18 @@
+[
+  {
+    "id": "promo_mtx6vg48",
+    "usedBy": [
+      "tg_996408205@studentai.uz",
+      "test_student_persisted@gmail.com",
+      "id_12"
+    ],
+    "createdAt": "2026-09-11T16:47:06.584Z",
+    "type": "PRO_MONTHS",
+    "code": "STUDENT2026",
+    "isActive": true,
+    "maxUses": 500,
+    "currentUses": 3,
+    "expiresAt": null,
+    "value": 1
+  }
+]

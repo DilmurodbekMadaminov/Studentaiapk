@@ -1,0 +1,44 @@
+{
+  "name": "student-ai-v5.2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+    "build:cf": "vite build",
+    "start": "node dist/server.cjs",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "1.33.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^12.16.0",
+    "lucide-react": "0.474.0",
+    "mammoth": "^1.12.0",
+    "motion": "^12.35.0",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^5.6.205",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-markdown": "9.0.1",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^22.14.0",
+    "@types/pdf-parse": "^1.1.5",
+    "@vitejs/plugin-react": "^5.0.0",
+    "esbuild": "^0.28.0",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

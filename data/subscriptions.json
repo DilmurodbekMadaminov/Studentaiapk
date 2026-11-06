@@ -1,0 +1,152 @@
+{
+  "7": {
+    "plan": "PRO",
+    "isPro": true,
+    "price": 0,
+    "currency": "UZS",
+    "subscribedAt": "2026-09-11T16:53:51.029Z",
+    "expiresAt": "2026-10-11T16:47:15.112Z",
+    "history": [
+      {
+        "id": "promo_manual_1789145631029",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-11T16:53:51.029Z",
+        "payer": "STUDENT2026",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "9": {
+    "plan": "PRO",
+    "isPro": true,
+    "price": 0,
+    "currency": "UZS",
+    "subscribedAt": "2026-09-11T16:53:51.029Z",
+    "expiresAt": "2026-10-11T16:47:15.112Z",
+    "history": [
+      {
+        "id": "promo_manual_1789145631029",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-11T16:53:51.029Z",
+        "payer": "STUDENT2026",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "12": {
+    "plan": "PRO",
+    "isPro": true,
+    "price": 0,
+    "currency": "UZS",
+    "subscribedAt": "2026-09-16T12:15:20.812Z",
+    "expiresAt": "2026-10-16T12:15:20.812Z",
+    "history": [
+      {
+        "id": "promo_1789560920812",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-16T12:15:20.812Z",
+        "payer": "test_student_persisted@gmail.com",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "996408205": {
+    "plan": "PRO",
+    "isPro": true,
+    "price": 0,
+    "currency": "UZS",
+    "subscribedAt": "2026-09-11T16:53:51.029Z",
+    "expiresAt": "2026-10-11T16:47:15.112Z",
+    "history": [
+      {
+        "id": "promo_manual_1789145631029",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-11T16:53:51.029Z",
+        "payer": "STUDENT2026",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "tg_dilnozailmurod@studentai.uz": {
+    "plan": "PRO",
+    "isPro": true,
+    "price": 0,
+    "currency": "UZS",
+    "subscribedAt": "2026-09-11T16:53:51.029Z",
+    "expiresAt": "2026-10-11T16:47:15.112Z",
+    "history": [
+      {
+        "id": "promo_manual_1789145631029",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-11T16:53:51.029Z",
+        "payer": "STUDENT2026",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "tg_996408205@studentai.uz": {
+    "plan": "PRO",
+    "isPro": true,
+    "price": 0,
+    "currency": "UZS",
+    "subscribedAt": "2026-09-11T16:54:03.800Z",
+    "expiresAt": "2026-11-11T16:47:15.112Z",
+    "history": [
+      {
+        "id": "promo_1789145643800",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-11T16:54:03.800Z",
+        "payer": "tg_996408205@studentai.uz",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      },
+      {
+        "id": "promo_manual_1789145631029",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-11T16:53:51.029Z",
+        "payer": "STUDENT2026",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "test_student_persisted@gmail.com": {
+    "plan": "PRO",
+    "isPro": true,
+    "price": 0,
+    "currency": "UZS",
+    "subscribedAt": "2026-09-16T12:15:20.812Z",
+    "expiresAt": "2026-10-16T12:15:20.812Z",
+    "history": [
+      {
+        "id": "promo_1789560920812",
+        "amount": 0,
+        "months": 1,
+        "provider": "PROMOCODE",
+        "paidAt": "2026-09-16T12:15:20.812Z",
+        "payer": "test_student_persisted@gmail.com",
+        "code": "STUDENT2026",
+        "status": "COMPLETED"
+      }
+    ]
+  }
+}

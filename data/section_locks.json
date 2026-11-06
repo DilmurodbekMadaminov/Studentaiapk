@@ -1,0 +1,10 @@
+{
+  "exam_mode": {
+    "lockReason": "Imtihon bazasi yangilanmoqda.",
+    "isLocked": true,
+    "updatedAt": "2026-09-16T12:15:20.230Z",
+    "lockMode": "ALL",
+    "sectionId": "exam_mode",
+    "sectionName": "Imtihon Tizimi"
+  }
+}

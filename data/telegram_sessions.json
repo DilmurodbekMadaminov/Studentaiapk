@@ -1,0 +1,130 @@
+[
+  {
+    "token": "auth_fa34b6f54fec87311f783912",
+    "createdAt": 1788961875064,
+    "expiresAt": 1788963675064,
+    "authenticated": false
+  },
+  {
+    "token": "auth_1b3092b5cf48b2dfdacaf8c0",
+    "createdAt": 1788962069635,
+    "expiresAt": 1788963869635,
+    "authenticated": false
+  },
+  {
+    "token": "auth_b9fde22b7445ad021819ff80",
+    "createdAt": 1788962158141,
+    "expiresAt": 1788963958141,
+    "authenticated": true,
+    "user": {
+      "id": 8,
+      "email": "tg_7858117466@studentai.uz",
+      "name": "Dilmurodbek Madaminov",
+      "password": "telegram_oauth_secured",
+      "photoURL": "https://ui-avatars.com/api/?name=Dilmurodbek%20Madaminov&background=0088cc&color=fff",
+      "avatar": "https://ui-avatars.com/api/?name=Dilmurodbek%20Madaminov&background=0088cc&color=fff",
+      "isAdmin": false,
+      "role": "USER",
+      "createdAt": "2026-09-09T13:56:13.574Z",
+      "authProvider": "telegram",
+      "telegramId": 7858117466,
+      "telegramUsername": "DilmurodbekMadaminov",
+      "phone": "+998 97 *** 20 73",
+      "isPro": false
+    }
+  },
+  {
+    "token": "auth_ff6ec552fcf8b5fcce0df38d",
+    "createdAt": 1788962562044,
+    "expiresAt": 1788964362044,
+    "authenticated": false
+  },
+  {
+    "token": "auth_e1ac5f176b78f81d42f03759",
+    "createdAt": 1788962562045,
+    "expiresAt": 1788964362045,
+    "authenticated": false
+  },
+  {
+    "token": "auth_926f96312bdb7a5f76d85058",
+    "createdAt": 1788962577507,
+    "expiresAt": 1788964377507,
+    "authenticated": false
+  },
+  {
+    "token": "auth_ab457afb2978d19812ce5071",
+    "createdAt": 1788962577508,
+    "expiresAt": 1788964377508,
+    "authenticated": false
+  },
+  {
+    "token": "auth_b2e64f85aeec05cba260d5af",
+    "createdAt": 1788962675152,
+    "expiresAt": 1788964475152,
+    "authenticated": false
+  },
+  {
+    "token": "auth_2963eee36784017ec456e123",
+    "createdAt": 1788962675153,
+    "expiresAt": 1788964475153,
+    "authenticated": false
+  },
+  {
+    "token": "auth_14b971c15f62571071c04024",
+    "createdAt": 1788962724244,
+    "expiresAt": 1788964524244,
+    "authenticated": true,
+    "user": {
+      "phone": "+998 97 *** 20 73",
+      "name": "Dilmurodbek Madaminov",
+      "password": "telegram_oauth_secured",
+      "authProvider": "telegram",
+      "createdAt": {
+        "type": "firestore/timestamp/1.0",
+        "seconds": 1788962173,
+        "nanoseconds": 574000000
+      },
+      "id": 8,
+      "photoURL": "https://ui-avatars.com/api/?name=Dilmurodbek%20Madaminov&background=0088cc&color=fff",
+      "isPro": false,
+      "role": "USER",
+      "email": "tg_7858117466@studentai.uz",
+      "isAdmin": false,
+      "telegramUsername": "DilmurodbekMadaminov",
+      "avatar": "https://ui-avatars.com/api/?name=Dilmurodbek%20Madaminov&background=0088cc&color=fff",
+      "telegramId": 7858117466
+    }
+  },
+  {
+    "token": "auth_d5bfd56afd181184b1e9b3bd",
+    "createdAt": 1788962861222,
+    "expiresAt": 1788964661222,
+    "authenticated": false
+  },
+  {
+    "token": "auth_080822018ac8242b578df90f",
+    "createdAt": 1788962882762,
+    "expiresAt": 1788964682762,
+    "authenticated": false
+  },
+  {
+    "token": "auth_7e4c5612f3e061f226af3142",
+    "createdAt": 1788962882763,
+    "expiresAt": 1788964682763,
+    "authenticated": false
+  },
+  {
+    "token": "auth_339cf403e3597dc0625134c1",
+    "createdAt": 1788963090562,
+    "expiresAt": 1788964890562,
+    "authenticated": false
+  },
+  {
+    "token": "auth_3184ab87d77cd52f055c52c1",
+    "createdAt": 1788963159370,
+    "expiresAt": 1788964959370,
+    "authenticated": false,
+    "phone": "+998 90 123 45 67",
+    "name": "Dilmurodbek"
+  }
+]

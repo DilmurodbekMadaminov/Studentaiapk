@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3C91E6" />
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+    <title>Student AI - The Hybrid Intelligence Platform for Academic Excellence and Monetization</title>
+    <meta name="description" content="The Hybrid Intelligence Platform for Academic Excellence and Monetization." />
+    <meta property="og:title" content="Student AI - The Hybrid Intelligence Platform for Academic Excellence and Monetization" />
+    <meta property="og:description" content="The Hybrid Intelligence Platform for Academic Excellence and Monetization." />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      // Browser environment polyfill for process.env
+      window.process = window.process || { env: { API_KEY: "" } };
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #F9FBFF;
+        color: #1E293B;
+        -webkit-tap-highlight-color: transparent;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-thumb { background: #3C91E6; border-radius: 10px; }
+      
+      .animate-fade-in { animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(60, 145, 230, 0.2); border-radius: 10px; }
+      
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+      }
+      .animate-shake { animation: shake 0.2s ease-in-out 0s 2; }
+    </style>
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  <script>
+    // Clean up any stale Service Workers and browser caches that cause a white/blank screen
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(registrations => {
+        for (let registration of registrations) {
+          registration.unregister().then(() => {
+            console.log('Stale Service Worker successfully unregistered');
+          });
+        }
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(names => {
+        for (let name of names) {
+          caches.delete(name);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

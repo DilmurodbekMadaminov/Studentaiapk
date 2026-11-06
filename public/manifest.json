@@ -1,0 +1,17 @@
+{
+  "name": "Student AI v5.2",
+  "short_name": "Student AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0F2F5",
+  "theme_color": "#2563eb",
+  "description": "Talabalar uchun sun'iy intellekt yordamchisi",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
